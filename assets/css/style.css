@@ -1,0 +1,14 @@
+body {
+  background-color: #5c65c0;
+}
+
+.logo {
+  width: 200px;
+}
+
+.content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}

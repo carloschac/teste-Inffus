@@ -1,14 +1,64 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
-    <title>Login de Usuário</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Incluindo o CSS/bootstrap no projeto -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Login</title>
   </head>
   <body>
-    <form method="POST" action="login.php">
-      <label>Email:</label><input type="text" name="email" id="email" /><br />
-      <label>Senha:</label
-      ><input type="password" name="senha" id="senha" /><br />
-      <input type="submit" value="entrar" id="entrar" name="entrar" /><br />
-      <a href="cadastro.html">Cadastre-se</a>
-    </form>
+    <!-- ============= MONTANDO A ESTRUTURA DO FORMULÁRIO ======================= -->
+    <section>
+      <form action="login.php" method="post">
+        <div class="container p-5 content">
+          <div class="tittle">
+            <h1 class="d-flex justify-content-center">Página de login</h1>
+          </div>
+
+          <div class="input-group mb-3 col">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Digite um email valido"
+              aria-label="Email"
+              aria-describedby="basic-addon1"
+              required
+            />
+          </div>
+          <div class="input-group mb-3 col">
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              class="form-control"
+              placeholder="Digite uma senha"
+              aria-label="senha"
+              aria-describedby="basic-addon1"
+              maxlength="32"
+              required
+            />
+          </div>
+
+          <input class="btn btn-primary" type="submit" value="Entrar" />
+        </div>
+      </form>
+    </section>
+
+    <!-- Incluindo o Script do Bootstrap no projeto -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

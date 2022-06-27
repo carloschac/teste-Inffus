@@ -1,11 +1,10 @@
+/* Definindo a cor de fundo das páginas HTML */
 body {
   background-color: #5c65c0;
 }
 
-.logo {
-  width: 200px;
-}
 
+/* Montando o card com os inputs do Formulário */
 .content {
   max-width: 50%;
   display: flex;
